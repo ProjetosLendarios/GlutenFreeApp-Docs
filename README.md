@@ -22,5 +22,9 @@ O **GlutenFree** é uma aplicação destinada a ajudar pessoas com intolerância
 ├── contactos.html     # Página de contactos
 └── sobre-nos.html     # Página sobre nós
 ```
+[Click me](http://www.google.com){: .btn}
 
-[Principal](https://projetoslendarios.github.io/GlutenFreeApp-Docs/)
+
+[Principal]()
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/mdo/github-buttons/ci.yml?branch=master&label=WebSite&logo=github)](https://projetoslendarios.github.io/GlutenFreeApp-Docs/)
