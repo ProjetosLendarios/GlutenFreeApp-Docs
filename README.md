@@ -2,7 +2,7 @@
 
 imagens de exemplo
 https://www.freepik.com/
-
+https://br.freepik.com/fotos-gratis/fechar-a-textura-de-jade-verde_26298714.htm#fromView=search&page=1&position=3&uuid=cbe62b23-358f-412a-8f9d-58e5c20baa44
 ## Descrição
 
 O **GlutenFree** é uma aplicação destinada a ajudar pessoas com intolerância ao glúten a encontrar alimentos e locais seguros. Este repositório contém o código-fonte do website promocional da aplicação, desenvolvido como parte de um projeto de aprendizagem e hobby.
