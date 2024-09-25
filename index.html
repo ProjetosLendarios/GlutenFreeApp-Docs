@@ -1,75 +1,423 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html class="no-js" lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlutenFree - Página Principal</title>
-    <meta name="description" content="GlutenFree é uma aplicação dedicada a ajudar pessoas com intolerância ao glúten a encontrar produtos e locais adequados.">
-    <meta name="keywords" content="glutenfree, sem glúten, alimentos sem glúten, restaurantes sem glúten, doença celíaca">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-        }
-        .btn-custom {
-            font-size: 16px;
-            color: white;
-            background-color: #28a745;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .btn-custom:hover {
-            background-color: #218838;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #555;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>GlutenFree - Viver sem Glúten.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
+
 <body>
-    <h1>Bem-vindo ao GlutenFree</h1>
-    <div class="container text-center">
-        <p>GlutenFree é uma aplicação dedicada a ajudar pessoas com intolerância ao glúten a encontrar produtos e locais adequados. Desenvolvida para proporcionar uma vida mais saudável e segura.</p>
-        <div class="row">
-            <div class="col-12 mb-2">
-                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/privacy.html" class="btn btn-custom btn-block">Política de Privacidade</a>
-            </div>
-            <div class="col-12 mb-2">
-                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/credits.html" class="btn btn-custom btn-block">Créditos</a>
-            </div>
-            <div class="col-12 mb-2">
-                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/main.html" class="btn btn-custom btn-block">Site de Apresentação</a>
-            </div>
-            <div class="col-12 mb-2">
-                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/abouta.html" class="btn btn-custom btn-block">Sobre Nós</a>
-            </div>
-            <div class="col-12 mb-2">
-                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/contacts.html" class="btn btn-custom btn-block">Contato</a>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
-    <footer>
-        <p>Desenvolvido por Gonçalo Garrido</p>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/LogoPlusTextTrans.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="active" aria-label="Toggle navigation">Inicío</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about-us.html" aria-label="Toggle navigation">Sobre Nós</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" aria-label="Toggle navigation">Contactos</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button home-btn">
+                                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree" class="btn">Instalar!</a>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section class="hero-area">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="hero-content">
+                        <h4>Apresentação da Aplicação GlutenFree</h4>
+                        <h1>A solução ideal para a sua alimentação sem glúten</h1>
+                        <p>A GlutenFree é a aplicação perfeita para celíacos e pessoas com intolerância ao glúten.
+                        <div class="button">
+                            <a href="about-us.html" class="btn">Experimente gratuitamente</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Features Area -->
+    <section class="freatures section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="image wow fadeInLeft" data-wow-delay=".3s">
+                        <img src="/assets/images/prints/2.png" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="content">
+                        <h3 class="heading wow fadeInUp" data-wow-delay=".5s"><span>Funcionalidades Principais</span>Desenvolvida com as mais recentes tecnologias</h3>
+                        <!-- Início da Primeira Funcionalidade -->
+                        <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                            <div class="f-icon">
+                                <i class="lni lni-fresh-juice"></i>
+                            </div>
+                            <h4>Leitura de Códigos de Barras</h4>
+                            <p>Verifica se os produtos são adequados para celíacos ao escanear o código de barras e obter informações detalhadas sobre os ingredientes.</p>
+                        </div>
+                        <!-- Fim da Primeira Funcionalidade -->
+                        <!-- Início da Segunda Funcionalidade -->
+                        <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
+                            <div class="f-icon">
+                                <i class="lni lni-dinner"></i>
+                            </div>
+                            <h4>Recomendações de Restaurantes</h4>
+                            <p>Encontra restaurantes próximos que oferecem opções de refeições sem glúten, garantindo segurança e tranquilidade nas suas escolhas.</p>
+                        </div>
+                        <!-- Fim da Segunda Funcionalidade -->
+                        <!-- Início da Terceira Funcionalidade -->
+                        <div class="single-feature wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="f-icon">
+                                <i class="lni lni-chef-hat"></i>
+                            </div>
+                            <h4>Receitas Sem Glúten</h4>
+                            <p>Acesso a uma vasta seleção de receitas sem glúten, organizadas por categorias para facilitar a sua escolha e ajudar na preparação de refeições seguras e saborosas.</p>
+                        </div>
+                        <!-- Fim da Terceira Funcionalidade -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Area -->
+    
+    <!-- Start Faq Area -->
+    <section class="faq section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Faq</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Perguntas Frequentes</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Aqui estão algumas das perguntas mais comuns feitas por celíacos sobre a aplicação GlutenFree.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <span class="title">A aplicação é rápida e fácil de usar?</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Sim, a aplicação foi otimizada para oferecer um desempenho rápido, permitindo escanear códigos de barras e procurar por restaurantes sem glúten de forma eficiente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <span class="title">A aplicação é atualizada regularmente?</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Sim, a aplicação é atualizada frequentemente para garantir que a base de dados de produtos e restaurantes sem glúten está sempre atualizada e precisa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="title">Posso personalizar as configurações da aplicação?</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Sim, pode ajustar as preferências para focar em produtos ou receitas sem glúten, além de adicionar filtros para outras intolerâncias alimentares ou preferências dietéticas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 xs-margin">
+                    <div class="accordion" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading11">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    <span class="title">Como a aplicação ajuda a encontrar produtos sem glúten?</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>A aplicação permite que escaneie códigos de barras de produtos para verificar se contêm glúten. Assim, garante a escolha de produtos seguros para celíacos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading22">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                                    <span class="title">A aplicação oferece recomendações de restaurantes sem glúten?</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>Sim, a aplicação inclui uma função de geolocalização que recomenda restaurantes próximos que oferecem opções sem glúten, com base na sua localização atual.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading33">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                                    <span class="title">A aplicação também fornece receitas sem glúten?</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>Sim, a aplicação disponibiliza uma vasta seleção de receitas sem glúten, que abrangem diferentes refeições e ocasiões, facilitando a sua alimentação sem preocupações.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--/ End Faq Area -->
+
+    <!-- Start Call Action Area -->
+    <section class="call-action">
+        <div class="container">
+            <div class="inner-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <div class="text">
+                            <h2>Descarregue a nossa aplicação!
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="button">
+                            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree" class="btn btn-alt"><i class="lni lni-play-store"></i> Google
+                                Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call Action Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer section">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-about">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo/LogoPlusTextTrans.png" alt="#">
+                                    </a>
+                                </div>
+                                <p>Ajudamos a Viver sem Glúten</p><!--
+                                <h4 class="social-title">Siga:</h4>
+                                <ul class="social">
+                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                </ul>-->
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>Informações</h3>
+                                <ul>
+                                    <li><a href="credits.html">Créditos</a></li>
+                                    <li><a href="privacy.html">Politíca de Privacidade</a></li>
+                                    <li><a href="privads.html">Politíca de Anuncios</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>Páginas</h3>
+                                <ul>
+                                    <li><a href="index.html">Início</a></li>
+                                    <li><a href="about-us.html">Sobre Nós</a></li>
+                                    <li><a href="contact.html">Contactos</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree">Instalar</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Start Copyright Area -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="copyright-text">© 2024 GlutenFree - All Rights Reserved</p>
+                        </div>
+                        <!--<div class="col-lg-6 col-md-6 col-12">
+                            <p class="copyright-owner">Designed and Developed by <a href="https://uideck.com/"
+                                    rel="nofollow" target="_blank">UIdeck</a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area -->
     </footer>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 2,
+                },
+                1170: {
+                    items: 3,
+                }
+            }
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+    </script>
 </body>
+
 </html>
